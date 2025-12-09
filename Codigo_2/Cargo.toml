@@ -1,0 +1,8 @@
+[package]
+name = "Codigo_2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rand = "0.8"   # Para generar números aleatorios
+rayon = "1.10" # Para el paralelismo fácil (Work-stealing parallelism)
