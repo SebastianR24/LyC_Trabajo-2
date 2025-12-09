@@ -84,7 +84,7 @@ int main()
 {
     int N = 500;
 
-    std::cout << "Iniciando multiplicación de matrices de " << N << "x" << N << std::endl;
+    std::cout << "Iniciando multiplicacion de matrices de " << N << "x" << N << std::endl;
 
     // Declarar e inicializar matrices
     std::vector<std::vector<double>> A(N, std::vector<double>(N));
@@ -97,14 +97,14 @@ int main()
     initializeMatrix(B, N);
     std::cout << "Matrices inicializadas." << std::endl;
 
-    std::cout << "\nEjecutando versión secuencial..." << std::endl;
+    std::cout << "\nEjecutando version secuencial..." << std::endl;
     auto start_seq = std::chrono::high_resolution_clock::now();
     multiplyMatricesSequential(A, B, C_seq, N);
     auto end_seq = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration_seq = end_seq - start_seq;
     std::cout << "Tiempo secuencial: " << duration_seq.count() << " segundos." << std::endl;
 
-    std::cout << "\nEjecutando versión paralela con OpenMP..." << std::endl;
+    std::cout << "\nEjecutando version paralela con OpenMP..." << std::endl;
     auto start_par = std::chrono::high_resolution_clock::now();
     multiplyMatricesParallelOpenMP(A, B, C_par, N);
     auto end_par = std::chrono::high_resolution_clock::now();
