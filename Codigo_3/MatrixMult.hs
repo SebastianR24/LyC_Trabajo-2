@@ -76,3 +76,8 @@ main = do
     resultPar <- time $ evaluate (force (multPar matA matB))
 
     putStrLn "\nVerificación completada."
+
+    putStrLn "Presiona Enter para continuar..."
+    _ <- getLine -- Espera a que el usuario escriba algo y de Enter
+
+    putStrLn "Fin."
