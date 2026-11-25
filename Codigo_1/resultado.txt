@@ -1,0 +1,4 @@
+Tiempo C (10 iteraciones, 500 movs): 0.000000 segundos
+Tiempo C (10 iteraciones, 500 movs): 0.000000 segundos
+Tiempo Python (10 iteraciones, 500 movs): 0.001479 segundos
+Tiempo C (10 iteraciones, 500 movs): 0.000046300 segundos
